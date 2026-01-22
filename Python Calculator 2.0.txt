@@ -39,6 +39,9 @@ while True:
 
 
 
-
+    except ValueError:
+        print("You must enter a valid number")
     except Exception:
         print("ERROR!")
+    finally:
+        print("over!")
