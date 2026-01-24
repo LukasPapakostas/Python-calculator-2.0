@@ -7,6 +7,7 @@ while True:
         symbol = str(input("Enter a symbol (-,+,/,*.**.%.!,log,sqrt){type q to exit}: : "))
         if symbol == "q":
             break
+        print("if you typed sqrt or ! then the number two will not work!")
         num2 = input("Enter the secound number: ")
         if num2 == "q":
             break
@@ -25,14 +26,12 @@ while True:
         elif symbol == "%":
             print(num1 % num2)
         elif symbol == "sqrt":
-            print (round(math.sqrt(num1, num2, 5)))
+            print (round(math.sqrt(num1), 5))
         elif symbol == "log":
-            print(round((math.log(num1, num2, 5))))
+            print(round(math.log(num1, num2), 5))
         elif symbol == "!":
             num1 = int(num1)
-            num2 = int(num2)
             print(math.factorial(num1))
-            print(math.factorial(num2))
         else:
             print("You must enter a valid symbol")
 
